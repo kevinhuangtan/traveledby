@@ -97,6 +97,7 @@ var Container = React.createClass({
             We believe the more visible a path, the more likely someone will take a chance and travel it. Our mission is to utilize the resources of Yale and Calhoun College to illuminate diverse, unconventional and worthwhile paths.
             <br/><br/>
             To begin, we will have a once-a-month luncheon where we invite up to five people from different industries and walks of life. Our guests will talk about their respective careers and fields: why they chose them, how they got there, and how they can help students get there. This won't be a long presentation where students just passively listen. Instead, the event will be set up as multiple concurrent conversations at tables in the dining hall. You will have the opportunity to have a conversation with the guests.
+            Help us kick off this project by filling out the following <a target="_blank" href="https://docs.google.com/a/yale.edu/forms/d/1lezwaAd8PJQODgB-TYhVjAPGwJwFUGltyHrL8i-6YDc/viewform">form</a>.
             <br/><br/>
             We will also have a Slack dedicated to TraveledBy &#x2014; an online forum where students and speakers can connect, Q&A, and share opportunities. Add your email above and we’ll send you an invite!
             <br/><br/>

@@ -115,10 +115,6 @@ a{
   text-align: justify;
   line-height: 22px;
 }
-.Slide2 .Description2{
-  margin-top: 250px;
-}
-
-.Slide2 .Description3{
-  margin-top: 450px;
+.Slide2 a:hover{
+  text-decoration: underline;
 }
