@@ -44,7 +44,7 @@ var Container = React.createClass({
   },
   handleSubmit: function(e){
     e.preventDefault();
-    console.log(this.refs.email.value);
+    // console.log(this.refs.email.value);
     email = this.refs.email.value;
     var message;
     var self = this;
@@ -63,7 +63,11 @@ var Container = React.createClass({
       });
     }
     else{
-      message = "please enter valid email"
+      message = "please enter valid email";
+      self.setState({
+        received : true,
+        message : message
+      })
     }
 
   },
