@@ -19,7 +19,7 @@ a{
   width: 100%;
   background-image: url('/images/road2.png');
   background-size: cover;
-  background-position: 50% 0%;
+  background-position: 50% 100%;
 }
 .RoadBackground img{
   width: 75px;
