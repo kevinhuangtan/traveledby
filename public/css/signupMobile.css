@@ -7,4 +7,16 @@
   .InputBox{
     top: 80%;
   }
+  .Slide2 p{
+    width: 250px;
+    font-size: 16px;
+  }
+  .Slide2 .Description2{
+    margin-top: 350px;
+  }
+
+  .Slide2 .Description3{
+    margin-top: 700px;
+    margin-bottom: 50px;
+  }
 }
