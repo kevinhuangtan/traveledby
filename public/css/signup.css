@@ -89,16 +89,14 @@ a{
   color: rgba(0, 0, 0, 0.43);
 }
 .InputBox .Submit{
-
-
-    cursor: pointer;
-    width: 100px;
-    height: 30px;
-    border-radius: 10px;
-    display: none;
-    margin: 0 auto;
-    margin-top: 15px;
-    padding-top: 10px;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  display: none;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding-top: 10px;
 
 }
 .InputBox .Submit:hover{
@@ -116,9 +114,9 @@ a{
   border-radius: 10px;
   padding: 10px;
   -webkit-transition: all .2s ease;
--moz-transition: all .2s ease;
--o-transition: all .2s ease;
-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
 }
 input:focus::-webkit-input-placeholder { color:transparent; }
 input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
@@ -149,6 +147,7 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
   margin-top: 150px;
   text-align: justify;
   line-height: 22px;
+  color: rgba(0, 0, 0, 0.65);
 }
 .Slide2 a:hover{
   text-decoration: underline;
