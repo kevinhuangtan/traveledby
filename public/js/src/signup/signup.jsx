@@ -40,6 +40,7 @@ var Container = React.createClass({
     return {
       received : false,
       message : "",
+      inputChange : false
     }
   },
   handleSubmit: function(e){
@@ -71,14 +72,22 @@ var Container = React.createClass({
     }
 
   },
+  handleChange: function(){
+    this.setState({ inputChange : true });
+  },
   render: function(){
     var Message;
-    var style;
+    var styleInput;
+    var styleSubmitButton;
+    if(this.state.inputChange){
+      console.log('here')
+      styleSubmitButton = {'display' : 'block'};
+    }
     if(this.state.received){
       Message = <p>{this.state.message}</p>
     }
     if(this.state.message == "received!"){
-      style = {'display' : 'none'}
+      styleInput = {'display' : 'none'}
     }
     return (
       <div className="Container">
@@ -88,8 +97,9 @@ var Container = React.createClass({
           </div>
           <Title/>
           <form className="InputBox" onSubmit={this.handleSubmit}>
-            <input style={style} ref="email" type="text" placeholder="Signup With Your Yale Email"/>
+            <input styleInput={styleInput} onChange={this.handleChange}  ref="email" type="text" placeholder="Signup With Your Yale Email"/>
             {Message}
+            <p style={styleSubmitButton} className="Submit">Submit</p>
           </form>
         </section>
         <section className="Slide2">
@@ -103,7 +113,7 @@ var Container = React.createClass({
             <br/><br/>
             Questions? <span>Interested in being a speaker?</span> <br/>Contact kevin.tan@yale.edu or annasophia.young@yale.edu
             <br/><br/><br/>
-            keep searching, never settle
+            keep searching, never settle.
           </p>
        </section>
       </div>
