@@ -115,13 +115,18 @@ a{
   padding: 0;
   border-radius: 10px;
   padding: 10px;
+  -webkit-transition: all .2s ease;
+-moz-transition: all .2s ease;
+-o-transition: all .2s ease;
+transition: all .2s ease;
 }
 input:focus::-webkit-input-placeholder { color:transparent; }
 input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
 input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
 input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
 .Container input:hover{
-  background-color: rgba(233, 233, 233, .2);
+  background-color: rgba(233, 233, 233, .15);
 }
 .Container input:focus{
   outline: none;
