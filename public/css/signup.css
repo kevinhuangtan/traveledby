@@ -17,9 +17,14 @@ a{
 .RoadBackground{
   height: 45%;
   width: 100%;
-  background-image: url('/images/road.png');
+  background-image: url('/images/road2.png');
   background-size: cover;
-  background-position: 60% 50%;
+  background-position: 50% 0%;
+}
+.RoadBackground img{
+  width: 75px;
+  margin-top: 15px;
+  margin-left: 40px;
 }
 .Title{
   position: absolute;

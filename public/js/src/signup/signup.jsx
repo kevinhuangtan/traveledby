@@ -78,7 +78,9 @@ var Container = React.createClass({
     }
     return (
       <div className="Container">
-        <div className="RoadBackground"></div>
+        <div className="RoadBackground">
+          <img src="/images/yale.png"/>
+        </div>
         <Title/>
         <form className="InputBox" onSubmit={this.handleSubmit}>
           <input style={style} ref="email" type="text" placeholder="Signup With Your Yale Email"/>
