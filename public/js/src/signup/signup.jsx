@@ -83,11 +83,11 @@ var Container = React.createClass({
       styleSubmitButton = {'display' : 'block'};
     }
     if(this.state.received){
-      // console.log(this.state.message)
       Message = <p>{this.state.message}</p>
     }
     if(this.state.message == "received!"){
       styleInput = {'display' : 'none'}
+      styleSubmitButton = {'display' : 'none'}
     }
     return (
       <div className="Container">
@@ -97,7 +97,7 @@ var Container = React.createClass({
           </div>
           <Title/>
           <form className="InputBox" onSubmit={this.handleSubmit}>
-            <input styleInput={styleInput} onChange={this.handleChange}  ref="email" type="text" placeholder="Signup With Your Yale Email"/>
+            <input style={styleInput} onChange={this.handleChange}  ref="email" type="text" placeholder="Signup With Your Yale Email"/>
             {Message}
             <p style={styleSubmitButton} onClick={this.handleSubmit} className="Submit">Submit</p>
           </form>
