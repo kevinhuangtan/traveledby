@@ -6,6 +6,8 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var $ = require('jquery');
 
+var makeAsyncScriptLoader = require('react-async-script');
+
 var PARSE_APP_ID = "FSfEL179hnGvnBBnvmmam10PhwDziYeukTJh8WRC"
 var PARSE_JAVASCRIPT_KEY = "RwYZQBqEmCDa1F5IV2iBvdwGi6smXLWSmggt3zxB"
 Parse.initialize(PARSE_APP_ID, PARSE_JAVASCRIPT_KEY);
@@ -13,6 +15,35 @@ Parse.initialize(PARSE_APP_ID, PARSE_JAVASCRIPT_KEY);
 ////////////////////////////////////////////////
 ////////////////*~ Container ~*/////////////////
 ////////////////////////////////////////////////
+//
+// <a href="https://twitter.com/traveledby" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @traveledby</a>
+// <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+// var twitterCallback = !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+//
+// const MockedComponent = React.createClass({
+//   displayName: "MockedComponent",
+//
+//   callsACallback(fn) {
+//     twitterCallback();
+//   },
+//
+//   render() {
+//     return <span/>;
+//   }
+// });
+//
+//
+// var ComponentWrapper = makeAsyncScriptLoader(MockedComponent, "https://twitter.com/traveledby", {
+//   exposeFuncs: ["callsACallback"]
+// });
+//
+// var TwitterAsync = React.createClass({
+//   render: function(){
+//     return (
+//
+//     )
+//   }
+// })
 
 var Title = React.createClass({
   render: function(){
@@ -101,6 +132,7 @@ var Container = React.createClass({
             {Message}
             <p style={styleSubmitButton} onClick={this.handleSubmit} className="Submit">Submit</p>
           </form>
+
         </section>
         <section className="Slide2">
           <p className="Description1">
@@ -118,7 +150,8 @@ var Container = React.createClass({
             <br/><br/>
             We will also have a Slack dedicated to TraveledBy &#x2014; an online forum where students and speakers can connect, Q&A, and share opportunities. Add your email above and we’ll send you an invite!
             <br/><br/>
-            Questions? <span>Interested in being a speaker?</span> <br/>Contact kevin.tan@yale.edu or annasophia.young@yale.edu
+            Questions? <span>Interested in being a speaker?</span> <br/>Contact kevin.tan@yale.edu or annasophia.young@yale.edu<br/>
+            <a href="https://twitter.com/traveledby">Follow @traveledby on Twitter</a>
             <br/><br/><br/>
             Keep searching, never settle.
           </p>

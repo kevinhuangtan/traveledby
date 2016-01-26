@@ -6,13 +6,27 @@ body{
 }
 a{
   text-decoration: none;
+  /*color: rgba(0, 0, 0, 0.43);*/
+
+}
+a:hover{
+  text-decoration: underline;
 }
 .Container{
   height: 100%;
   width: 100%;
   position: absolute;
 }
-
+.TwitterFollow{
+  /*background-color: rgb(134, 230, 156);*/
+  text-align: center;
+  /*position: absolute;*/
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  /*top: 700px;*/
+  bottom: 0;
+}
 .RoadBackground{
   height: 45%;
   width: 100%;
@@ -143,7 +157,7 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
   margin: 0 auto;
   left: 0;
   right: 0;
-  margin-top: 150px;
+  margin-top: 130px;
   text-align: justify;
   line-height: 22px;
   color: rgba(0, 0, 0, 0.65);

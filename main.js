@@ -23,12 +23,6 @@ app.get('/', function (req, res)
     res.render('signup.html');
 });
 
-
-app.get('/home', function (req, res)
-{
-    res.render('signup.html');
-});
-
 app.listen(app.get('port'), function() {
   console.log("Node app is running at localhost:" + app.get('port'))
 })
